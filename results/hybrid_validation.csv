@@ -1,0 +1,5 @@
+strategy,TP,FP,TN,FN,precision,recall,f1_score,false_positive_rate,false_negative_rate
+Rule baseline,32,13,4,0,0.711,1.0,0.831,0.765,0.0
+Union,32,17,0,0,0.653,1.0,0.79,1.0,0.0
+Majority vote,12,1,16,20,0.923,0.375,0.533,0.059,0.625
+Rule + supporting detector,12,1,16,20,0.923,0.375,0.533,0.059,0.625

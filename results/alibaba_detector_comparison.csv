@@ -1,0 +1,6 @@
+strategy,TP,FP,TN,FN,precision,recall,f1_score,false_positive_rate,false_negative_rate
+Rule baseline,6,0,44,0,1.0,1.0,1.0,0.0,0.0
+Statistical baseline,3,0,44,3,1.0,0.5,0.667,0.0,0.5
+ML baseline,6,1,43,0,0.857,1.0,0.923,0.023,0.0
+Hybrid broad review,6,0,44,0,1.0,1.0,1.0,0.0,0.0
+Hybrid priority review,6,0,44,0,1.0,1.0,1.0,0.0,0.0

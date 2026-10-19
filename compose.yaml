@@ -1,0 +1,26 @@
+services:
+  pipeline:
+    image: finops-da3
+    command: ["python", "main.py"]
+    cpus: 1.0
+    mem_limit: 1g
+    volumes:
+      - ./data:/app/data:ro
+      - ./results:/app/results
+
+  dashboard:
+    image: finops-da3
+    command:
+      - streamlit
+      - run
+      - dashboard.py
+      - --server.address=0.0.0.0
+      - --server.port=8501
+      - --browser.gatherUsageStats=false
+    cpus: 1.0
+    mem_limit: 1g
+    ports:
+      - "127.0.0.1:8501:8501"
+    volumes:
+      - ./data:/app/data:ro
+      - ./results:/app/results:ro

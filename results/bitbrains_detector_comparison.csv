@@ -1,0 +1,5 @@
+strategy,TP,FP,TN,FN,precision,recall,f1_score,false_positive_rate,false_negative_rate,evaluated_resources
+Rule-Based,44,1,4,0,0.978,1.0,0.989,0.2,0.0,49
+Statistical,1,0,5,43,1.0,0.023,0.044,0.0,0.977,49
+ML-Based,12,5,0,32,0.706,0.273,0.393,1.0,0.727,49
+Combined (Union),44,5,0,0,0.898,1.0,0.946,1.0,0.0,49

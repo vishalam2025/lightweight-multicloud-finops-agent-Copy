@@ -1,0 +1,12 @@
+
+data/raw/alibaba/
+data/raw/azure/
+data/processed/alibaba_usage_sample.csv
+*.tar.gz
+*.csv.gz
+__pycache__/
+.venv/
+venv/
+.env
+outputs/
+logs/

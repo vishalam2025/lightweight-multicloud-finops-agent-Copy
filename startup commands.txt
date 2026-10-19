@@ -1,0 +1,4 @@
+dir compose.yaml
+docker build --load -t finops-da3
+docker compose run --rm pipeline
+docker compose up -d dashboard
